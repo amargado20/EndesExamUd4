@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class GestorMatriculas {
 
-    public ArrayList<Matricula> matriculas;
+    private ArrayList<Matricula> matriculas;
 
     public GestorMatriculas() {
         matriculas = new ArrayList<>();

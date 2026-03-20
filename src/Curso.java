@@ -2,10 +2,10 @@ import java.util.ArrayList;
 
 public class Curso {
 
-    public String nombre;
-    public ArrayList<Alumno> alumnos;
-    public ArrayList<Asignatura> asignaturas;
-    public ArrayList<Profesor> profesores;
+    private String nombre;
+    private ArrayList<Alumno> alumnos;
+    private ArrayList<Asignatura> asignaturas;
+    private ArrayList<Profesor> profesores;
 
     public Curso(String nombre) {
         this.nombre = nombre;

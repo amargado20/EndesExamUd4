@@ -3,8 +3,8 @@ import java.util.ArrayList;
 public class Alumno {
 
     public String nombre;
-    public int edad;
-    public ArrayList<Matricula> matriculas;
+    private int edad;
+    private ArrayList<Matricula> matriculas;
 
     public Alumno(String nombre, int edad) {
         this.nombre = nombre;
