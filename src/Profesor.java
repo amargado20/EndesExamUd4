@@ -1,4 +1,4 @@
-public class Profesor {
+public class Profesor implements Mostrar {
 
     public String nombre;
     public String especialidad;

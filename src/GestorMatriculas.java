@@ -1,12 +1,14 @@
 import java.util.ArrayList;
 
-public class GestorMatriculas {
+public class GestorMatriculas implements Mostrar {
 
     private ArrayList<Matricula> matriculas;
 
     public GestorMatriculas() {
         matriculas = new ArrayList<>();
     }
+
+
 
     public void crearMatricula(Alumno a, Asignatura as, Profesor p, double nota) {
 
@@ -15,13 +17,11 @@ public class GestorMatriculas {
         }
 
         Matricula m = new Matricula(a, as, p, nota);
-
         matriculas.add(m);
-
         a.matricular(m);
     }
 
-    public void mostrarTodas() {
+    public void mostrar() {
         for (Matricula m : matriculas) {
             System.out.println(
                 m.alumno.nombre + " - " +

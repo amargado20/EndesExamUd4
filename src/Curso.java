@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Curso {
+public class Curso implements Mostrar{
 
     private String nombre;
     private ArrayList<Alumno> alumnos;
@@ -26,7 +26,7 @@ public class Curso {
         profesores.add(p);
     }
 
-    public void mostrarTodo() {
+    public void mostrar() {
         System.out.println("CURSO: " + nombre);
 
         for (Alumno a : alumnos) {

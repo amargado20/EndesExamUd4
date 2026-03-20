@@ -1,4 +1,4 @@
-public class Matricula {
+public class Matricula implements Mostrar {
 
     public Alumno alumno;
     public Asignatura asignatura;

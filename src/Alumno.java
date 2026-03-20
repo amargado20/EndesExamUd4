@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Alumno {
+public class Alumno implements Mostrar {
 
     public String nombre;
     private int edad;
@@ -16,7 +16,7 @@ public class Alumno {
         matriculas.add(m);
     }
 
-    public void mostrarDatos() {
+    public void mostrar() {
         System.out.println("Alumno: " + nombre);
 
         for (Matricula m : matriculas) {
