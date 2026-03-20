@@ -8,6 +8,9 @@ public class Profesor implements Mostrar {
         this.especialidad = especialidad;
     }
 
+    /*
+     *Utiliza el metodo mostrar de la interfaz
+     */
     public void mostrar() {
         System.out.println("Profesor: " + nombreProfesor + " - " + especialidad);
     }
