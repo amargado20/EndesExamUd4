@@ -1,14 +1,14 @@
 public class Profesor implements Mostrar {
 
-    public String nombre;
+    public String nombreProfesor;
     public String especialidad;
 
-    public Profesor(String nombre, String especialidad) {
-        this.nombre = nombre;
+    public Profesor(String nombreProfesor, String especialidad) {
+        this.nombreProfesor = nombreProfesor;
         this.especialidad = especialidad;
     }
 
     public void mostrar() {
-        System.out.println("Profesor: " + nombre + " - " + especialidad);
+        System.out.println("Profesor: " + nombreProfesor + " - " + especialidad);
     }
 }

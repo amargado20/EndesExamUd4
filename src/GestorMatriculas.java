@@ -8,8 +8,6 @@ public class GestorMatriculas implements Mostrar {
         matriculas = new ArrayList<>();
     }
 
-
-
     public void crearMatricula(Alumno a, Asignatura as, Profesor p, double nota) {
 
         if (nota < 0) {
@@ -24,9 +22,9 @@ public class GestorMatriculas implements Mostrar {
     public void mostrar() {
         for (Matricula m : matriculas) {
             System.out.println(
-                m.alumno.nombre + " - " +
+                m.alumno.nombreAlumno + " - " +
                 m.asignatura.nombre + " - " +
-                m.profesor.nombre + " - " +
+                m.profesor.nombreProfesor + " - " +
                 m.nota
             );
         }
@@ -35,7 +33,7 @@ public class GestorMatriculas implements Mostrar {
     public void mostrarAprobados() {
         for (Matricula m : matriculas) {
             if (m.nota >= 5) {
-                System.out.println("APROBADO: " + m.alumno.nombre);
+                System.out.println("APROBADO: " + m.alumno.nombreAlumno);
             }
         }
     }

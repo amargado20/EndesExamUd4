@@ -13,8 +13,8 @@ public class Matricula implements Mostrar {
     }
 
     public void mostrar() {
-        System.out.println(alumno.nombre + " - " +
+        System.out.println(alumno.nombreAlumno + " - " +
                 asignatura.nombre + " - " +
-                profesor.nombre + " - Nota: " + nota);
+                profesor.nombreProfesor + " - Nota: " + nota);
     }
 }

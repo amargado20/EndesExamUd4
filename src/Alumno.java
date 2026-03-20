@@ -2,12 +2,12 @@ import java.util.ArrayList;
 
 public class Alumno implements Mostrar {
 
-    public String nombre;
+    public String nombreAlumno;
     private int edad;
     private ArrayList<Matricula> matriculas;
 
-    public Alumno(String nombre, int edad) {
-        this.nombre = nombre;
+    public Alumno(String nombreAlumno, int edad) {
+        this.nombreAlumno = nombreAlumno;
         this.edad = edad;
         this.matriculas = new ArrayList<>();
     }
@@ -17,11 +17,11 @@ public class Alumno implements Mostrar {
     }
 
     public void mostrar() {
-        System.out.println("Alumno: " + nombre);
+        System.out.println("Alumno: " + nombreAlumno);
 
         for (Matricula m : matriculas) {
             System.out.println("Asignatura: " + m.asignatura.nombre +
-                    " Profesor: " + m.profesor.nombre +
+                    " Profesor: " + m.profesor.nombreProfesor +
                     " Nota: " + m.nota);
         }
     }

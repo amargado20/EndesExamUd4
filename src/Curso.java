@@ -2,13 +2,13 @@ import java.util.ArrayList;
 
 public class Curso implements Mostrar{
 
-    private String nombre;
+    private String nombreCurso;
     private ArrayList<Alumno> alumnos;
     private ArrayList<Asignatura> asignaturas;
     private ArrayList<Profesor> profesores;
 
-    public Curso(String nombre) {
-        this.nombre = nombre;
+    public Curso(String nombreCurso) {
+        this.nombreCurso = nombreCurso;
         alumnos = new ArrayList<>();
         asignaturas = new ArrayList<>();
         profesores = new ArrayList<>();
@@ -27,10 +27,10 @@ public class Curso implements Mostrar{
     }
 
     public void mostrar() {
-        System.out.println("CURSO: " + nombre);
+        System.out.println("CURSO: " + nombreCurso);
 
         for (Alumno a : alumnos) {
-            System.out.println("Alumno: " + a.nombre);
+            System.out.println("Alumno: " + a.nombreAlumno);
         }
 
         for (Asignatura as : asignaturas) {
@@ -38,7 +38,7 @@ public class Curso implements Mostrar{
         }
 
         for (Profesor p : profesores) {
-            System.out.println("Profesor: " + p.nombre);
+            System.out.println("Profesor: " + p.nombreProfesor);
         }
     }
 }
