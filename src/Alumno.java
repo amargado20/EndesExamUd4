@@ -3,12 +3,12 @@ import java.util.ArrayList;
 public class Alumno implements Mostrar {
 
     public String nombreAlumno;
-    private int edad;
+    private int edadAlumno;
     private ArrayList<Matricula> matriculas;
 
-    public Alumno(String nombreAlumno, int edad) {
+    public Alumno(String nombreAlumno, int edadAlumno) {
         this.nombreAlumno = nombreAlumno;
-        this.edad = edad;
+        this.edadAlumno = edadAlumno;
         this.matriculas = new ArrayList<>();
     }
 
